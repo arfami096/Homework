@@ -1,0 +1,13 @@
+function userReputation ( likes, dislikes, AllMes, EditedMes) {
+    let result = 0;
+    let notEditedMes = AllMes - EditedMes;
+if (AllMes === 0) {
+result = 0;
+}
+else if (likes > dislikes) {
+result = (likes - dislikes) * notEditedMes;
+}
+return result;}
+
+userReputation(100, 70, 12, 10);
+
